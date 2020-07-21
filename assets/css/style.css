@@ -91,6 +91,3 @@ body>div{
 #round-status{
     display: none;
 }
-#rock, #paper{
-    transform: rotate(90deg);
-}
