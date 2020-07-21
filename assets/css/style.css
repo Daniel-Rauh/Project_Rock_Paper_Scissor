@@ -1,0 +1,93 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(35deg, #3b3b3b 0%, #c0c0c0 50%);
+}
+article{
+    width: 200px;
+    background: #312a22;
+    border: 2px solid #836d53;
+    border-radius: 10px;
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+h1{
+    color: #836d53;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+h3{
+    text-align: center;
+    margin: 0 0 20px;
+}
+#ten{
+    margin-left: 50px;
+}
+#twenty{
+    margin-left: 40px;
+}
+p{
+    text-align: center;
+}
+article:nth-of-type(2){
+    position: relative;
+}
+article:nth-of-type(2) p{
+    border: 2px solid #836d53;
+    display: inline;
+    padding: 3px 6px;
+    position: absolute;
+    top: 0px;
+    background-color: #312a22;
+    border-radius: 5px;
+}
+#user{
+    left: -28px;
+}
+#comp{
+    right: -28px;
+}
+button:not(#restart){
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #312a22;
+    background-color: #836d53;
+    transition: transform .2s;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    transform: scale(1.05);
+}
+#restart{
+    background-color: #836d53;
+    border: 2px solid #312a22;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+#restart:hover{
+    transform: scale(1.1);
+}
+.upper{
+    font-size: .8rem;
+    position: relative;
+    top: -4px;
+}
+body>div{
+    margin-bottom: 20px;
+}
+#round-status{
+    display: none;
+}

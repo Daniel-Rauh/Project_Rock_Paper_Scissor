@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    <article>
+        <form action="">
+            <p>How many rounds do you want to play?</p>
+            <div id="rounds">
+                <input type="radio" name="rounds" id="five" checked>
+                <label for="">5</label>
+                <input type="radio" name="rounds" id="ten">
+                <label for="">10</label>
+                <br>
+                <input type="radio" name="rounds" id="fifteen">
+                <label for="">15</label>
+                <input type="radio" name="rounds" id="twenty">
+                <label for="">20</label>
+            </div>
+            <h2 id="round-status">0/0</h2>
+        </form>
+    </article>
+    <article>
+        <p id="user">USER</p>
+        <p id="comp">COMP</p>
+        <h2 id="display">0 : 0</h2>
+    </article>
+    <h3 id="status">Let's play</h3>
+    <p>MAKE YOUR MOVE</p>
+    <div>
+        <button id="rock" onclick="rock()"><img src="assets/img/icons8-hand-rock-50.png" alt=""></button>
+        <button id="paper" onclick="paper()"><img src="assets/img/icons8-hand-50.png" alt=""></button>
+        <button id="scissor" onclick="scissor()"><img src="assets/img/icons8-hand-scissors-50.png" alt=""></button>
+    </div>
+    <button id="restart" onclick="restart()">Restart</button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
